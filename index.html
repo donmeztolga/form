@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hekim Bilgi Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #fff;
+            border-bottom: 2px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        main {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            background-color: #C8102E; /* Florence kırmızı rengi */
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #A60D26;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.florence.com.tr/assets/images/logo.svg" alt="Florence Nightingale Logo">
+    </header>
+    <main>
+        <h1>Hekim Bilgi Formu</h1>
+        <form action="https://usebasin.com/f/YOUR_ENDPOINT_ID" method="POST">
+            <label for="ad">Ad:</label>
+            <input type="text" id="ad" name="Ad" placeholder="Hekimin adı" required>
+
+            <label for="soyad">Soyad:</label>
+            <input type="text" id="soyad" name="Soyad" placeholder="Hekimin soyadı" required>
+
+            <label for="uzmanlik">Uzmanlık Alanı:</label>
+            <input type="text" id="uzmanlik" name="Uzmanlık Alanı" placeholder="Ör: Kardiyoloji" required>
+
+            <label for="unvan">Akademik Unvan:</label>
+            <input type="text" id="unvan" name="Akademik Unvan" placeholder="Ör: Doçent Doktor" required>
+
+            <label for="ilgi">İlgi Alanları:</label>
+            <textarea id="ilgi" name="İlgi Alanları" rows="4" placeholder="Hekimin ilgi alanlarını yazınız..." required></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </main>
+</body>
+</html>
